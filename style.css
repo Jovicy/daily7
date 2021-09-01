@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body {
+    background: #f7f7ff;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-heading h1 {
+    color: #78798b;
+}
+
+.swift {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #78798b;
+    font-weight: 400;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    background: #8f93ea;
+    border-radius: 16px;
+    padding: 5px 26.5px;
+    margin-top: -3px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:focus + .slider {
+    background-color: #333;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #333;
+}
+
+input:checked +
+.slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 5px;
+}
+
+.slider.round:before {
+    border-radius: 70%;
+}
+
+.hero-pricing {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-pace {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.e {
+    font-size: 20px;
+}
+
+.image {
+    background: #ffffff;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0em 2em;
+    border-radius: 5px;
+}
+
+.image:hover {
+    background: #7276e1;
+    color: #fff;
+}
+
+.image:hover .main-button{
+    background: #fff;
+    color: #7276e1;
+}
+
+.main-button {
+    background: #7276e1;
+    color: #fff;
+    border-radius: 3px;
+    width: 250px;
+    height: 38px;
+    border: 1px solid #7276e1;
+}
+
+.main {
+    font-size: 36px;
+}
+
+.bot {
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 205vh;
+    }
+    .set-pace {
+        display: flex;
+        flex-direction: column;
+        margin-top: 650px;
+        gap: 15px;
+        justify-content: center;
+    }
+}
